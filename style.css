@@ -1,0 +1,147 @@
+*{
+	padding: 0;
+	margin:0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: arial, sans-serif;
+}
+/* projenin fontu arial olarak belirlendi fakat butonlar için ayrıca belirlenmesi gerekiyor. */
+
+/* flex ekran boyutuna göre boyut değiştirmesini sağlar */
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+ nav {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin-right: 30px;
+	margin-top: 14px;
+}
+/* linkler için ayarlamalar */
+nav a {
+	font-size: 13px;
+	display: inline-block;
+	line-height: 24px;
+	font-weight: 400;
+	color: rgb(0,0,0, 0.87);
+	cursor: pointer;
+	padding: 5px 6.7px
+}	
+nav a:hover {
+	text-decoration: underline;
+	opacity: .85;
+}
+.section-1 {
+	flex: 1;
+}
+.section-1 .logo {
+	display: block;
+	margin: 0px auto;
+	margin-top: 107px;
+}
+/* arama çubuğu ve altındaki butonları kapsayan kısım başlangıcı*/
+.s-box {
+	width: 580px;
+	margin: 0px auto;
+	position: relative;
+	margin-top: -8px;
+	text-align: center;
+}
+.s-box .s-input {
+	display: block;
+	border: 1px solid #ddd;
+	color: rgba(0,0,0, 0.87);
+	font-size: 16px;
+	padding: 13px;
+	padding-left: 50px;
+	padding-right: 50px;
+	border-radius: 25px;
+	width: 100%;
+	transition: box-shadow 100ms;
+	outline: none;
+}
+/* .s-box classında 580px olarak kutuyu tanımladık. .s-box içindeki input taginin özelliklerini belirleyen .s-input classını kullanarak 
+sağından solundan 50'şer pixel boşluk bıraktık. Böylece yazı yazılacak alanımız 480px oldu.	*/
+.s-box  .s-input:hover {
+	border: 1px solid #fff;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.05), 
+				0 0 2px rgba(0, 0, 0, 0.05),
+				0 0 3px rgba(0, 0, 0, 0.05),
+				0 0 4px rgba(0, 0, 0, 0.05), 
+				0 0 5px rgba(0, 0, 0, 0.05), 
+				0 0 4px rgba(0, 0, 0, 0.05), 
+				0 0 5px rgba(0, 0, 0, 0.05)
+}
+/* arama çubuğu gölgesi araştırmalar sonucunda bulundu */
+.s-box .search-icon {
+	width: 20px;
+	opacity: .4;
+	position: absolute;
+	top: 13px;
+	left: 14px;
+}
+.s-box .vs-icon {
+	height: 24px;
+	width: 24px;
+	position: absolute;
+	top: 11px;
+	right: 10px;
+}
+.s-btn {
+	height: 36px;
+	border: 1px solid transparent;
+	padding: 9px 15px;
+	background-color: #f2f2f2;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #5f6368;
+	font-size: 14px;
+	border-radius: 4px;
+	display: inline-block;
+	margin-right: 10px;
+	margin-top: 28px;
+	outline: none;
+	cursor: pointer;
+	transition: border-color 100ms;
+}
+.s-btn:hover {
+	border: 1px solid #aaa;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.05), 
+	0 0 2px rgba(0, 0, 0, 0.05),
+	0 0 3px rgba(0, 0, 0, 0.05),
+	0 0 4px rgba(0, 0, 0, 0.05), 
+	0 0 5px rgba(0, 0, 0, 0.05), 
+	0 0 4px rgba(0, 0, 0, 0.05), 
+	0 0 5px rgba(0, 0, 0, 0.05)
+}
+/* arama çubuğunda kullnaılna gölge aynen butonlarda da kullanıldı. */
+
+/* arama çubuğu ve altındaki butonları kapsayan kısım bitişi*/
+
+/* footer başlangıcı */
+footer {
+	background-color: #f2f2f2;
+}
+footer a {
+	color: #5f6368;
+	display: inline-block;
+	padding: 12px 11.3px;
+	font-size: 14px;
+}
+footer a:hover {
+	text-decoration: underline;
+}
+.links {
+	border-top: 1px solid #ddd;
+	display: flex;
+}
+.link-1 {
+	padding-left: 18.7px;
+	flex: 1;
+}
+.link-2 {
+	padding-right: 18.7px;
+}
+/* footer bitişi */
